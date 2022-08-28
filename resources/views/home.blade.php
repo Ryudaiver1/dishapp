@@ -2,7 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
-        <title>Blog</title>
+        <title>料理サイト-home</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
@@ -15,6 +15,10 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+            }
+            
+            h1 {
+                text-align: center
             }
 
             .full-height {
@@ -61,7 +65,8 @@
         </style>
     </head>
     <body>
-        <h1>Blog Name</h1>
+        <h1>料理サイト</h1>
+        <a href="/dishes">一覧</a>
         <div class='dishes'>
             @foreach ($dishes as $dish)
             <div class='dish'>

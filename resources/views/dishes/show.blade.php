@@ -61,6 +61,9 @@
         </style>
     </head>
     <body>
+        <div class="footer">
+            <a href="/">Home</a>
+        </div>
         <h1 class="name">
             {{ $dish->name }}
         </h1>
@@ -71,7 +74,7 @@
             </div>
         </div>
         <div class="footer">
-            <a href="/">戻る</a>
+            <a href="/dishes">一覧に戻る</a>
         </div>
     </body>
 </html>
